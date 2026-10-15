@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/dm-sans";
+@import "@fontsource/poppins/800.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: 'DM Sans Variable', 'Verdana', sans-serif;
+    --font-logo: 'Poppins', 'DM Sans Variable', sans-serif;
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Orkut real: fundo cinza-claro, caixas brancas, links azuis e o rosa da logo como acento */
+:root {
+    --background: #E8EBF2;
+    --foreground: #333F54;
+    --card: #FFFFFF;
+    --card-foreground: #2A3547;
+    --popover: #FFFFFF;
+    --popover-foreground: #2A3547;
+    --primary: #EC008C;
+    --primary-foreground: #FFFFFF;
+    --secondary: #EEF1F6;
+    --secondary-foreground: #333F54;
+    --muted: #F0F2F7;
+    --muted-foreground: #5C6B84;
+    --accent: #EC008C;
+    --accent-foreground: #FFFFFF;
+    --destructive: #B91C1C;
+    --border: #D5DAE3;
+    --input: #C9D0DC;
+    --ring: #EC008C;
+    --chart-1: #EC008C;
+    --chart-2: #28589C;
+    --chart-3: #F59E0B;
+    --chart-4: #15803D;
+    --chart-5: #46536B;
+    --radius: 0.25rem;
+    --sidebar: #FFFFFF;
+    --sidebar-foreground: #333F54;
+    --sidebar-primary: #EC008C;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #EEF1F6;
+    --sidebar-accent-foreground: #333F54;
+    --sidebar-border: #D5DAE3;
+    --sidebar-ring: #EC008C;
+}
+
+.dark {
+    --background: #232A38;
+    --foreground: #E2E8F0;
+    --card: #2C3547;
+    --card-foreground: #E2E8F0;
+    --popover: #2C3547;
+    --popover-foreground: #E2E8F0;
+    --primary: #FF4FA8;
+    --primary-foreground: #2A0018;
+    --secondary: #3A465C;
+    --secondary-foreground: #E2E8F0;
+    --muted: #2C3547;
+    --muted-foreground: #97A3B8;
+    --accent: #FF4FA8;
+    --accent-foreground: #FFFFFF;
+    --destructive: #F87171;
+    --border: #3A465C;
+    --input: #3A465C;
+    --ring: #FF4FA8;
+    --chart-1: #FF4FA8;
+    --chart-2: #A6C4FF;
+    --chart-3: #F59E0B;
+    --chart-4: #4ADE80;
+    --chart-5: #C9D0DC;
+    --sidebar: #2C3547;
+    --sidebar-foreground: #E2E8F0;
+    --sidebar-primary: #FF4FA8;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #3A465C;
+    --sidebar-accent-foreground: #E2E8F0;
+    --sidebar-border: #3A465C;
+    --sidebar-ring: #FF4FA8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
+
+@layer components {
+  /* classic dotted-underline blue link */
+  .retro-link {
+    color: #28589C;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 2px;
+  }
+  .retro-link:hover {
+    text-decoration-style: solid;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./*"],
+      "lucide-react": ["./lib/lucide-react.tsx"],
+      "lucide-react-upstream": ["../node_modules/lucide-react/dist/lucide-react.d.ts"],
+      "recharts": ["./lib/recharts.tsx"],
+      "recharts-upstream": ["../node_modules/recharts/types/index.d.ts"]
+    }
+  },
+  "include": ["."]
+}

@@ -1,0 +1,194 @@
+{
+  "theme": "retro-light",
+  "project_title": "Orkut Clássico (2004-2014) - Rede Social Nostálgica",
+  "target_context": "hybrid_fullstack",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#D4DFEE",
+        "on_bg": "#204070",
+        "on_bg_muted": "#4B6E9C",
+        "roles": {
+          "link": "#28589C",
+          "error": "#B91C1C",
+          "success": "#15803D"
+        }
+      },
+      {
+        "name": "header_bar",
+        "kind": "solid",
+        "bg": "#3B5998",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#BFDBFE",
+        "roles": {
+          "link": "#FFFFFF",
+          "link_hover": "#E0E7FF"
+        }
+      },
+      {
+        "name": "card_panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#1E293B",
+        "on_bg_muted": "#506982",
+        "roles": {
+          "link": "#28589C",
+          "border": "#B0C4DE"
+        }
+      },
+      {
+        "name": "table_header",
+        "kind": "solid",
+        "bg": "#C3D9FF",
+        "on_bg": "#1A365D",
+        "on_bg_muted": "#2A4365"
+      },
+      {
+        "name": "table_row_alt",
+        "kind": "solid",
+        "bg": "#EBF2FC",
+        "on_bg": "#1E293B",
+        "on_bg_muted": "#4B6584"
+      },
+      {
+        "name": "orkut_pink_accent",
+        "kind": "solid",
+        "bg": "#ED258C",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#FED7E2"
+      },
+      {
+        "name": "badge_trust_cool_sexy",
+        "kind": "solid",
+        "bg": "#FFFBEB",
+        "on_bg": "#78350F",
+        "on_bg_muted": "#92400E"
+      }
+    ],
+    "accent": "#ED258C",
+    "on_accent": "#FFFFFF",
+    "palette_tokens": {
+      "orkut_blue_dark": "#2B4B80",
+      "orkut_blue_primary": "#3B5998",
+      "orkut_blue_header": "#C3D9FF",
+      "orkut_blue_border": "#B0C4DE",
+      "orkut_blue_bg": "#D4DFEE",
+      "orkut_pink": "#ED258C",
+      "orkut_pink_dark": "#C2185B",
+      "orkut_gold_star": "#F59E0B",
+      "orkut_ice": "#EBF2FC"
+    }
+  },
+  "typography": {
+    "font_family_heading": "DM Sans",
+    "font_family_body": "DM Sans",
+    "font_import": "@import \"@fontsource-variable/dm-sans\";",
+    "scale_px": {
+      "display": 36,
+      "h1": 28,
+      "h2": 22,
+      "h3": 18,
+      "body": 14,
+      "caption": 12
+    },
+    "letter_spacing": {
+      "heading": "tracking-tight",
+      "overline": "tracking-[0.15em]"
+    }
+  },
+  "entry_surfaces": {
+    "/": "classic split layout — orkut logo + demo accounts quick login left, 2004 login & signup form box right with classic cyan/blue gradient container",
+    "/perfil": "3-column classic orkut grid — left sidebar with profile photo & nav, center content with info, scrap preview, testimonials & fans, right sidebar with friends grid & communities grid",
+    "/recados": "2-column classic scrapbook with rich emoticon picker toolbar and classic paginated post list with reply quotes",
+    "/depoimentos": "2-column testimonials management with pending approval tab, accepted list and send testimonial modal",
+    "/comunidades": "community directory search, forum topic list, create community modal and active threads view"
+  },
+  "visual_enhancers": {
+    "retro_styling": "Beveled 1px borders, subtle gradients on header bars (#C3D9FF to #A6C4FF), dotted separators, classic dotted underline links on hover, 4-corner slightly rounded card borders (rounded-sm or rounded-md 4px max)",
+    "emoticons": "Classic Orkut text emoticons converted to animated/styled emojis: :) (sorriso), :D (risonho), ;) (piscadinha), :P (língua), :( (triste), :o (surpreso), (H) (óculos escuros), (A) (anjo), (6) (diabinho), (L) (coração), (K) (beijo), (F) (flor), (P) (foto/câmera)",
+    "stats_meters": "Classic Orkut meters for Confiável (Trusty - smileys), Legal (Cool - ice cubes), Sexy (Sexy - hearts), Fãs (Fans - stars counter)",
+    "table_borders": "1px solid #B0C4DE with header background #C3D9FF and alternating row backgrounds #FFFFFF and #EBF2FC"
+  },
+  "layouts": {
+    "global_header": "Blue bar with Orkut logo, search bar for users/communities, quick nav links (Início, Meu Perfil, Recados, Amigos, Comunidades), user badge and logout button",
+    "sub_header_breadcrumbs": "Classic breadcrumb trail 'orkut > meu perfil > recados' with quick counter badges (novos recados, convites pendentes)",
+    "profile_layout": {
+      "type": "grid-3-col",
+      "left_col_w": "w-56 shrink-0",
+      "center_col": "flex-1 min-w-0",
+      "right_col_w": "w-72 shrink-0"
+    }
+  },
+  "motion": {
+    "transitions": "transition-colors duration-150 ease-in-out",
+    "modals": "transition-opacity duration-200 ease-out",
+    "hover_lift": "hover:brightness-95 active:translate-y-px"
+  },
+  "accessibility": {
+    "focus_rings": "focus-visible:ring-2 focus-visible:ring-[#ED258C] focus-visible:outline-none",
+    "contrast_check": "All text tokens meet AA standard (>=4.5:1). #204070 on #D4DFEE is 5.8:1, #1E293B on #FFFFFF is 12.6:1, #FFFFFF on #3B5998 is 6.2:1, #FFFFFF on #ED258C is 4.7:1",
+    "keyboard_nav": "Full tab and enter navigation on emoticons, scrap deletion, friend acceptance, and tabs",
+    "test_ids": "Every button, input, tab, and card item MUST include role-based data-testid"
+  },
+  "image_urls": {
+    "avatars": [
+      {
+        "name": "avatar_orkut_default",
+        "url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=faces",
+        "category": "user_avatar"
+      },
+      {
+        "name": "avatar_demo_bruninho",
+        "url": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop&crop=faces",
+        "category": "user_avatar"
+      },
+      {
+        "name": "avatar_demo_carol",
+        "url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=faces",
+        "category": "user_avatar"
+      },
+      {
+        "name": "avatar_demo_rodrigo",
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
+        "category": "user_avatar"
+      },
+      {
+        "name": "avatar_demo_juliana",
+        "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces",
+        "category": "user_avatar"
+      }
+    ],
+    "communities": [
+      {
+        "name": "comm_acordo_tarde",
+        "url": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=120&h=120&fit=crop",
+        "category": "community_icon"
+      },
+      {
+        "name": "comm_eu_odeio_acordar_cedo",
+        "url": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=120&h=120&fit=crop",
+        "category": "community_icon"
+      },
+      {
+        "name": "comm_tocava_a_campainha",
+        "url": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=120&h=120&fit=crop",
+        "category": "community_icon"
+      },
+      {
+        "name": "comm_filosofia_de_boteco",
+        "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=120&h=120&fit=crop",
+        "category": "community_icon"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build the classic Orkut app completely in Portuguese (pt-BR) with true 2004 nostalgia aesthetic (blue/cyan frames, subtle bevels, pink Orkut badges, ice-blue tables).",
+    "Provide ready-to-use 1-click Demo Accounts on the Login page (e.g. 'Bruno G.', 'Carol Mendes', 'Rodrigo Silva') alongside standard email/password signup and login.",
+    "Implement core features: Perfil (dados, status 'quem sou eu', frase de efeito, medidores confiável/legal/sexy, fãs, amigos, comunidades), Recados (scrapbook with emoticons, privacy options, deletion, pagination), Depoimentos (testimonials with pending approval / accepted statuses), Amigos (send request, accept, reject, list, unfriend), Comunidades (browse directory, search, create community, join/leave, create topics and reply in forums), and Busca de Usuários.",
+    "Integrate the classic Orkut emoticon bar into Scrap and Topic replies (:), :D, ;), :P, :(, :o, (H), (A), (6), (L), (K), (F), etc.) that converts shortcodes to cute styled emojis.",
+    "Ensure responsive design: works like classic desktop 3-column Orkut on large screens and stacks cleanly into tabs/accordions on mobile screens.",
+    "Always set data-testid on every interactive element (e.g. data-testid='login-submit-btn', data-testid='scrap-textarea', data-testid='emoticon-smile', data-testid='community-create-btn')."
+  ]
+}
