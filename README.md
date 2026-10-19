@@ -1,6 +1,6 @@
 <div align="center">
 
-# orkut <sup>clássico</sup>
+# orkut clássico
 
 **Uma recriação nostálgica do Orkut — a rede social que marcou os anos 2000 no Brasil.**
 Recados, depoimentos, comunidades, fãs e aqueles medidores de "confiável, legal e sexy". Tudo de volta.
